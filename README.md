@@ -3,6 +3,9 @@
 In this repository I'll keep a application I used to re-learn Java and Spring, using Alura.
 >Note that this project is focused on the REST API, so there's no Frontend, no graphic interface.
 >>To circumvent the need for a full frontend-backend application to test the requisitions, this project will have a dedicated folder to Postman. That way, all requisitions can be propely tested. 
+>
+>Lastly, any comments on the application are study-direct. So whenever I feel like studying it again I can more easily understand certain aspects that are more complex and complicated
+>>Due to this, the comments are in my mother tongue, Portuguese. So I can more easily and rapidly comprehend it
 
 ## Objectives
 
@@ -16,7 +19,7 @@ In this repository I'll keep a application I used to re-learn Java and Spring, u
 * Spring Boot 3.2.1
 * Java 17
 * Lombok
-* PostgreSQL
+* MySQL
 * Flyway (Migration)
 * JPA / Hibernate
 * Maven
