@@ -36,6 +36,8 @@ public class Medico {
                 //a tabela do médico, a tabela que ela esta
     private Endereco endereco;
 
+    private Boolean ativo;
+
     public Medico(DadosCadastroMedico dados) {
 
         this.nome = dados.nome();
@@ -44,6 +46,41 @@ public class Medico {
         this.crm = dados.crm();
         this.especialidade = dados.especialidade();
         this.endereco = new Endereco(dados.endereco());
+        this.ativo = true;
+
+    }
+
+    public void atualizarInfo(DadosAtualizacaoMedico dados){
+
+        if(dados.nome() != null) {
+
+            this.nome = dados.nome();
+
+        }
+
+        if(dados.telefone() != null){
+
+            this.telefone = dados.telefone();
+
+        }
+
+        if(dados.endereco() != null){
+
+            this.endereco.atualizarInfo(dados.endereco());
+
+        }
+
+    }
+
+    public void excluir() {
+
+        this.ativo = false;
+
+    }
+
+    public void reativar(){
+
+        this.ativo = true;
 
     }
 }
